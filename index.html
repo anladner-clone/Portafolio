@@ -3,44 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba-Portafolio</title>
+    <title>Portafolio de PRUEBA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <h1>Ariel Ladner</h1>
         <nav>
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#gallery">Galería</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+  
     <section id="about">
         <h2>Sobre Mí</h2>
-        <p>Hola, soy Ariel Ladner, estudiante de Ingeniería en Sistemas con un interés por el desarrollo de software. Me encanta aprender cosas nuevas y crear proyectos desafiantes.</p>
+        <p>Hola, soy Ariel Ladner, un estudiante de Ingeniería en Sistemas de Información y apasionado por el desarrollo de software. Con una formación autodidacta y proyectos personales, busco siempre aprender nuevas tecnologías y resolver problemas complejos. Me especializo en Python y desarrollo web, con experiencia en bases de datos y soluciones administrativas.</p>
     </section>
 
+    <!-- Sección de Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Lenguajes de Programación: Python, C, JavaScript, HTML, CSS</li>
+            <li>Desarrollo de Software: Aplicaciones administrativas, gestión de proyectos, sistemas de votación</li>
+            <li>Bases de Datos: MySQL, SQLite</li>
+            <li>Frameworks: Django, Flask</li>
+            <li>Control de Versiones: Git, GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Proyectos -->
     <section id="projects">
         <h2>Proyectos</h2>
+        
         <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Creación de un software administrativo diseñado para facilitar la gestión de diversas tareas según las necesidades de los usuarios. Este sistema permite almacenar información en bases de datos y garantiza un acceso seguro mediante un sistema de inicio de sesión.
-Dentro del programa, los "proyectos" se refieren a las diferentes áreas de administración que un usuario puede manejar.</p>
+            <h3>Proyecto 1: Software Administrativo</h3>
+            <p>Creación de un software administrativo diseñado para facilitar la gestión de diversas tareas según las necesidades de los usuarios. Este sistema permite almacenar información en bases de datos y garantiza un acceso seguro mediante un sistema de inicio de sesión.</p>
+            <p>Dentro del programa, los "proyectos" se refieren a las diferentes áreas de administración que un usuario puede manejar.</p>
+            <a href="#" target="_blank">Ver código en GitHub</a>
         </div>
+
         <div class="project">
-            <h3>Proyecto 2</h3>
+            <h3>Proyecto 2: Programa de Votación Electrónica</h3>
             <p>Colaboré con un compañero de colegio en el desarrollo de un programa de votación electrónica para una institución educativa. Utilizamos Python para la implementación, donde mi responsabilidad se centró en la programación y la conexión de datos a una base de datos, mientras que mi compañero se encargó del diseño de la aplicación.</p>
+            <a href="#" target="_blank">Ver código en GitHub</a>
         </div>
     </section>
 
+    <!-- Sección de Galería de Imágenes -->
+    <section id="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-container">
+            <img src="project1.png" alt="Software Administrativo" width="200">
+            <img src="project2.png" alt="Programa de Votación Electrónica" width="200">
+        </div>
+    </section>
+
+    <!-- Sección de Contacto con Formulario -->
     <section id="contact">
         <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mi email: <a href="mailto: anladner.work@gmail.com">anladner.work@gmail.com</a></p>
+        <p>Si estás interesado en colaborar conmigo o tienes alguna pregunta, no dudes en contactarme:</p>
+        
+        <form action="mailto:anladner.work@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br>
+
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Ariel Ladner. Todos los derechos reservados.</p>
     </footer>
